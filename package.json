@@ -4,6 +4,10 @@
   "description": "A dApp that mints collections and NFTs",
   "repository": "https://github.com/sacredwx/dapp-721.git",
   "author": "sacredwx <sacredwx@gmail.com>",
+  "scripts": {
+    "build": "hardhat compile",
+    "test": "hardhat test"
+  },
   "devDependencies": {
     "@ethersproject/abi": "^5.7.0",
     "@ethersproject/providers": "^5.7.2",
