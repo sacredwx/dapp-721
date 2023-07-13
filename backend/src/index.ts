@@ -66,7 +66,7 @@ app.use(express.urlencoded({ extended: true }));
  */
 
 // TODO: Need to be paginated
-app.get('/collections', async (req: Request, res: Response) => {
+app.get('/collections', (req: Request, res: Response) => {
   try {
     return res.json(Object.fromEntries(collections));
   } catch (e) {
@@ -75,10 +75,14 @@ app.get('/collections', async (req: Request, res: Response) => {
 });
 
 // TODO: Need to be paginated
-app.get('/tokens', async (req: Request, res: Response) => {
+app.get('/tokens', (req: Request, res: Response) => {
   try {
     return res.json(Object.fromEntries(tokens));
   } catch (e) {
     return res.status(500).json({ error: e });
   }
+});
+
+app.listen(port, () => {
+  console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
 });
