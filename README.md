@@ -1,5 +1,15 @@
 # DApp-721
 
+The repository includes:
+
+A Smart contract that is able to deploy NFT collections
+and mint NFTs on all the previously collections
+
+A backend server that listens to the emited events and caches them
+and provides the dApp with relevant data
+
+A dApp which features the creation of new collections and NFTs
+
 ## Quick start
 
 The first things you need to do are cloning this repository and installing its
